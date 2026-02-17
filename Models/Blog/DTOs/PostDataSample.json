@@ -1,0 +1,69 @@
+{
+    "data": {
+        "id": 0,
+        "title": "About Me",
+        "preview": "I've always wanted to have a blog, not because I wanted to teach anything, but to have a journal of what I do daily. So this is it, a simple journal that illustrates what I do daily.",
+        "previewImageSource": "https://res.cloudinary.com/dlalpk5ff/image/upload/c_thumb,w_200,g_face/v1746633664/myphoto_eqixat.jpg",
+        "sections": [
+            {
+                "index": 0,
+                "contentTypeI":3,
+                "content": "https://music.youtube.com/watch?v=AUAxlOfw2O0&si=Tk3I7Xs4R6LZ_0LG"
+            },
+            {
+                "index": 0,
+                "contentTypeId": 1,
+                "content": "https://res.cloudinary.com/dlalpk5ff/image/upload/v1746633664/myphoto_eqixat.jpg"
+
+            },
+            {
+                "index": 1,
+                "contentTypeId": 0,
+                "content": "I've always wanted to have a blog, not because I wanted to teach anything, but to have a journal of what I do daily. So this is it, a simple journal that illustrates what I do daily and the ideas that come to me in my daily looking at stuff."
+            },
+            {
+                "index": 2,
+                "contentTypeId":0,
+                "content": "I remember I didn't know what to study back in 1998, something that really interested me was psychology, in a weird way, something that I liked was seeing something molded by a series of choices of mine that would behave better and for good. Then 1999 brought 'the matrix' and that shocked me. I thought about the possibility of creating something out of nothing, behaving after a series of rules and raw data."
+            },
+            {
+                "index": 3,
+                "contentTypeId": 1,
+                "content": "https://res.cloudinary.com/dlalpk5ff/image/upload/v1747694145/The_Oracle_Making_Cookies_tmaffc.webp"
+            },
+            {
+                "index":4,
+                "contentTypeId": 0,
+                "content": "And it happened, I got fascinated by the idea of the creation, in my fantasy I wasn't Neo (because I'm not the greatest superheroes fan), I was the Architect, later I found out about this career in computer science that followed mathematics very deeply and they taught about AI at the end of the career and I was super interested. One decision after another one and ended on a different path but still as a Software Engineer. And so this is the list of jobs that took me here, not mentioning the companies because I'm not doing publcity for the companies, but for the technologies I used and the things I learned. Something else I thought of doing is creating my own implementation of the projects I worked on while on those companies, so it's also like a small portfolio of what I did. I hope you enjoy it as much as I did."
+            },
+            {
+                "index": 5,
+                "contentTypeId": 1,
+                "content":"https://res.cloudinary.com/dlalpk5ff/image/upload/v1747698004/ComfyUI_00033__xin1sr.webp"
+            },
+            {
+                "index": 6,
+                "contentTypeId": 0,
+                "content": "From 2006 to 2010 I was given the opportunity to work on a company in my hometown, Monterrey Mexico, while I was finishing my studies, this company offered me a position as a QA Engineer, something that wasn't really on my plans, but I guess the important part was to get into the industry somehow. I started working on requirement gathering, analyzing requirements, to contrast with functionality and really put in writing what the customer wanted. At the moment it didn't feel like a big thing, but looking in retrospective I feel like it was a big thing to learn. A year passed and a manager gave me the opportunity to work on a project as junior software developer, using the technologies that the client used: Classic ASP embeded in the HTML, Javascript, C# on .Net 2.0 and a SQL Server database, using the old school ways of extracting the data, it used an SqlDataReader and posted information. I remember using visual studio 2005 and asking a collegue: what is Ajax? How do I use it? He didn't know either, so I started digging into it, found about the old XMLHttpRequest object and started making PoC's about it, of course, company wise they wanted to stay with the traditional methods of accessing data in the server and not using that crazy Javascript stuff, but well, at least I had learnt something new. Later on that same company I had the opportunity to keep working with another of their clients and I learnt more and more about dotnet and C# and Javascript, for what would become my main stack til today. I think the most representative project I worked on that company was a catalog of machines and arrays of disks and where were they being used, what projects were they assigned to and which clients were using them."
+            },
+            {
+                "index": 7,
+                "contentTypeId": 8,
+                "content": "Something like this||#"
+            },
+            {
+                "index": 8,
+                "contentTypeId": 1,
+                "content": "https://res.cloudinary.com/dlalpk5ff/image/upload/v1747700463/thekidandthelibrary_skcyvr.webp"
+            },
+            {
+                "index": 9,
+                "contentTypeId":0,
+                "content": "At the late 2010 the big man thought he had learnt all he needed to know and that it was time to move on to another company. I was hired by a company in Monterrey Mexico for a project that involved creating an inventory application done with the latest desktop technology: WPF. I was excited I was going to learn everything about WPF and MVVM and new techniques to retrieve information using LINQ and something called DBML, the only thing here is that I was not going to use C#, it was going to be VB.NET, I didn't care, I was going to learn something new. And so here is where I learnt about the MVVM pattern, and how to use it in WPF, the different ways of binding data to the UI, and how to use the commands and the INotifyPropertyChanged interface. I also learnt about the different ways of accessing data, using LINQ to SQL and Entity Framework. It was interesting although I wasn't really using this shinny new technology stack that I've learnt in my previous project."
+            }
+        ],
+        "createdAt": "2025-05-18T00:00:00Z",
+        "isPublic": true,
+        "tags": ["me", "blog", "about"]
+    }
+}

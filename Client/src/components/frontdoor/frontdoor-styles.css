@@ -1,0 +1,406 @@
+* , html {
+  scroll-behavior: smooth !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* #region main FrontDoor */
+:root {
+  /*my favorite palette*/
+  --blanquito: #eef4ed;
+  --naranjita: #FB8500;
+  --dorado: #FFB703;
+  --oscuro: #023047;
+  --azul: #219ebc;
+  --celeste: #8ecae6;
+  --frontDoorLeftColumnWidth: 50%;
+  --frontDoorRightColumnWidth: 50%;
+}
+
+i {
+  font-size: clamp(0.75rem, 2vw, 1rem) !important;
+}
+
+#frontDoorMainCanva {
+  background-color: var(--dorado);
+  display: grid;
+  grid-template-columns: var(--frontDoorLeftColumnWidth) var(--frontDoorRightColumnWidth);
+  width: 100dvw;
+  height: 100dvh;
+  transition: all 0.5s;
+}
+
+#frontDoorContent {
+  background-color: var(--celeste);
+}
+
+#frontDoorList {
+  background-color: var(--blanquito);
+}
+
+/* #endregion */
+
+/* #region FrontDoorList */
+/* #region Panels */
+#panelsRange {
+  position: absolute;
+  bottom: 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10px;
+  background: var(--blanquito);
+  outline: none;
+  opacity: 0.1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#panelsRange:hover {
+  opacity: 1;
+}
+
+#panelsRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 10px;
+  background: var(--oscuro);
+  cursor: pointer;
+}
+
+#panelsRange::-moz-range-thumb {
+  width: 30px;
+  height: 10px;
+  background: var(--oscuro);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* #endregion */
+
+.frontDoorLoadMore {
+    color: var(--oscuro);
+    display: flex;
+    background-color: var(--dorado);
+    padding: 0.5rem;
+    margin: 1rem;
+    min-height: 5rem;
+    cursor: pointer;
+    .loadMoreButton {
+      width: 100%;
+      font-size: clamp(1.1rem, 2vw, 2.5rem);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+}
+
+
+.frontDoorStory p, .frontDoor h3 {
+    font-size: clamp(0.75rem, 1.3vw, 1.3rem) !important;
+}
+
+.frontDoorStory {
+  color: var(--oscuro);
+  display: grid;
+  grid-template-columns: 70% 30%;
+  background-color: var(--dorado);
+  padding: 0.5rem;
+  margin: 1rem;
+  min-height: 10rem;
+  cursor: pointer;
+  .frontDoorStoryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .frontDoorTextContent {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    justify-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 1rem;
+  }
+}
+
+.frontDoorTextContent h3, .titleBlock.section {
+  overflow: hidden !important;
+  flex-direction: column;
+}
+
+.categoriesSticky {
+  position:sticky;
+  position: -webkit-sticky;
+  top: 0;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+}
+
+.frontDoorFilters {
+  display: flex;
+  align-items: center;
+  background-color: var(--blanquito);
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.frontDoorFilters li {
+  padding: 0.25rem 1rem;
+  border: 1px solid var(--azul);
+  cursor: pointer;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.activeCategory {
+  background-color: var(--azul);
+  color: var(--blanquito);
+}
+
+.frontDoorStoryHero {
+  background-color: var(--naranjita);
+  color: var(--oscuro);
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  margin: 1rem;
+  min-height: 20rem;
+  cursor: pointer;
+  .frontDoorStoryImg {
+    vertical-align: middle;
+    object-fit: cover;
+  }
+  .frontDoorHeroContent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .frontDoorStoryImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .frontDoorTextContent {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+      justify-items: flex-end;
+      justify-content: flex-start;
+      padding: 0 1rem;
+
+      .frontDoorHeroContentText {
+        color: var(--oscuro);
+        width: 100%;
+        text-align: justify;
+        font-size: clamp(0.75rem, 2vw, 1.3rem);
+      }
+
+      .frontDoorHeroContentTitle {
+        color: var(--oscuro);
+        font-size: clamp(1.25rem, 2vw, 2.25rem);
+        line-height: .9;
+        overflow: hidden;
+      }
+
+      i.frontDoorHeroContentText {
+        margin-top: 0.5rem;
+      }
+    }
+
+
+  }
+}
+
+/* #endregion */
+
+/* #region FrontDoorContent */
+
+.contentContainer {
+  .mainStoryHeader {
+    font-size: clamp(1.5rem, 2vw, 2.5rem) !important;
+    width: 100%;
+    text-align: left;
+  }
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  padding: 3rem;
+  .selectedStoryMainImg {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+  }
+  .section {
+    background-color: var(--azul);
+        color: var(--blanquito);
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        flex-grow: 0;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .imageSection {
+    margin: 0;
+    padding: 1rem 0 0 0;
+    overflow: hidden;
+  }
+  .lblPostWrittenOn {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.section img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+/* #endregion */
+
+/* region FrontDoorHEader */
+
+#frontDoorHeader {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 0 50% 0 0;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    #frontDoorHeaderContent {
+        flex-direction: column;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 1rem 1rem;
+        background: #fff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        border-radius: 0 0 1rem 1rem;
+        overflow: hidden;
+        height: auto;
+        min-width: 25rem;
+        margin: 0;
+        .menuContent {
+          width: 100%;
+          .menuContent ul.theOptions {
+              display: flex;
+              width: 100%;
+              flex-flow: row;
+              .menuOption {
+                flex:auto;
+              }
+          }
+        }
+    }
+}
+
+#frontDoorHeader.closed {
+    .menuContent {
+        display: none;
+    }
+}
+#frontDoorHeader.open {
+    .menuContent {
+        display: flex;
+        .theOptions {
+            display: flex;
+            width: 100%;
+            flex-flow: row;
+            .menuOption {
+                flex:auto;
+            }
+        }
+    }
+}
+
+.menuOption a {
+    text-decoration: none;
+    color: var(--oscuro);
+    font-size: clamp(0.75rem, 1vw, 1rem);
+
+}
+
+
+/* #endregion FrontDoorHeader */
+
+
+@media screen and (max-width: 768px) {
+  #frontDoorMainCanva {
+    grid-template-columns: 100%;
+    height: auto;
+  }
+  #frontDoorList {
+    width: 100%;
+    height: auto;
+  }
+  .frontDoorStory {
+    grid-template-columns: 100%;
+    min-height: auto;
+  }
+  .frontDoorStoryHero {
+    flex-direction: column;
+    min-height: auto;
+  }
+    #frontDoorHeader {
+    padding: 0;
+  }
+  .contentContainer {
+    padding: 2rem;
+  }
+
+  #frontDoorContent {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #frontDoorMainCanva {
+    grid-template-columns: 100%;
+    height: auto;
+  }
+  #frontDoorList {
+    width: 100%;
+    height: auto;
+  }
+  .frontDoorStory {
+    grid-template-columns: 100%;
+    min-height: auto;
+  }
+  .frontDoorStoryHero {
+    flex-direction: column;
+    min-height: auto;
+  }
+  #frontDoorHeader {
+    padding: 0;
+  }
+  .contentContainer {
+    padding: 1rem;
+  }
+
+  #frontDoorContent {
+    padding-top: 3rem;
+  }
+}
+
